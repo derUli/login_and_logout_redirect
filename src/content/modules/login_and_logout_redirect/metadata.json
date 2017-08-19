@@ -1,0 +1,17 @@
+{
+	"source": "extend",
+	"version": "1.0",
+	"embed": false,
+	"controllers": {
+		"LoginAndLogoutRedirect": "LoginAndLogoutRedirect.php"
+	},
+	"main_class": "LoginAndLogoutRedirect",
+	"custom_acl": [
+		"login_and_logout_redirect"
+	],
+	"admin_permission": "login_and_logout_redirect",
+	"settings": {
+		"login_redirect": "",
+		"logout_redirect": ""
+	}
+}
