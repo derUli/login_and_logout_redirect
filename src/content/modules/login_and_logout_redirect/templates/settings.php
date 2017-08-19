@@ -13,7 +13,7 @@ if (Request::isPost()) {
 	action="<?php Template::escape(ModuleHelper::buildAdminURL("login_and_logout_redirect"));?>"
 	method="post">
 <?php csrf_token_html();?>
-<h2><?php translate("login_redirect")?></h2>
+<h3><?php translate("login_redirect")?></h3>
 	<table>
 		<tr>
 			<td><strong><?php translate("redirect_to");?></strong></td>
@@ -21,7 +21,7 @@ if (Request::isPost()) {
 				value="<?php Template::escape(Settings::get("login_redirect"));?>"></td>
 		</tr>
 	</table>
-	<h2><?php translate("logout_redirect")?></h2>
+	<h3><?php translate("logout_redirect")?></h3>
 	<table>
 		<tr>
 			<td><strong><?php translate("redirect_to");?></strong></td>
@@ -29,6 +29,7 @@ if (Request::isPost()) {
 				value="<?php Template::escape(Settings::get("logout_redirect"));?>"></td>
 		</tr>
 	</table>
+	<br />
 	<p>
 		<button type="submit" class="btn btn-default"><?php translate("save");?></button>
 	</p>
